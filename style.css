@@ -8,7 +8,42 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    flex-direction: column;
 	height: 100vh;
-	background-color: hsl(218, 23%, 16%);
-	font-family: 'Manrope', sans-serif;
+	background-color: hsl(27, 66%, 92%);
+	font-family: 'DM Sans', sans-serif;
+}
+
+.card-balance {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    height: 7.5rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 1rem;
+    padding: 1.6rem;
+    color:  hsl(33, 100%, 98%);
+    font-size: 18px;
+}
+
+.balance-total {
+font-size: 2rem;
+font-weight: 700;
+}
+
+.logo {
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    background-color:hsl(33, 100%, 98%);
 }
