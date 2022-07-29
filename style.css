@@ -174,3 +174,26 @@ footer {
 	transform: translateX(-50%);
 	bottom: 0;
 }
+
+
+@media (max-width: 375px) {
+    .card-balance, .card-summary{
+        width: 20rem;
+    }
+    .headline {
+        font-size: 1.4rem;
+    }
+    .summary-value {
+        font-size: 1.7rem;
+
+    }
+    .summary-title {
+        font-size: 0.9rem;
+    }
+
+    .chart-price {
+        width: 2.5rem;
+        height: 2rem;
+        font-size: 12px;
+    }
+}
