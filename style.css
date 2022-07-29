@@ -8,42 +8,71 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    flex-direction: column;
+	flex-direction: column;
 	height: 100vh;
 	background-color: hsl(27, 66%, 92%);
 	font-family: 'DM Sans', sans-serif;
 }
 
+.card-balance, .card-summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30rem;
+	padding: 1.6rem;
+	border-radius: 1rem;
+	
+}
+
 .card-balance {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30rem;
     height: 7.5rem;
+	margin-bottom: 1.5rem;
     background-color: hsl(10, 79%, 65%);
-    border-radius: 1rem;
-    padding: 1.6rem;
-    color:  hsl(33, 100%, 98%);
-    font-size: 18px;
+	color: hsl(33, 100%, 98%);
+	font-size: 18px;
 }
 
-.balance-total {
-font-size: 2rem;
-font-weight: 700;
-}
 
-.logo {
-    position: absolute;
-    right: 1.6rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 .card-summary {
+    height: 30rem;
+	background-color: hsl(33, 100%, 98%);
+}
+
+.balance-total, .headline {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+
+.diagrams {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30rem;
-    background-color:hsl(33, 100%, 98%);
+    height: 10rem;
+}
+.chart {
+    width: 10%;
+    height: 100%;
+}
+
+
+
+.logo {
+	position: absolute;
+	right: 1.6rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+footer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
 }
