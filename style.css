@@ -14,48 +14,37 @@ body {
 	font-family: 'DM Sans', sans-serif;
 }
 
-.card-balance, .card-summary {
+.card-balance,
+.card-summary {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 30rem;
-	padding: 1.6rem;
 	border-radius: 1rem;
-	
 }
 
 .card-balance {
-    position: relative;
-    height: 7.5rem;
+	position: relative;
+	height: 7rem;
 	margin-bottom: 1.5rem;
-    background-color: hsl(10, 79%, 65%);
+    padding: 1.6rem;
+	background-color: hsl(10, 79%, 65%);
 	color: hsl(33, 100%, 98%);
 	font-size: 18px;
 }
 
-
-
 .card-summary {
-    height: 30rem;
+	height: 30rem;
+    padding: 2.2rem;
+    
 	background-color: hsl(33, 100%, 98%);
 }
 
-.balance-total, .headline {
+.balance-total,
+.headline {
 	font-size: 2rem;
 	font-weight: 700;
 }
-
-
-.diagrams {
-    display: flex;
-    height: 10rem;
-}
-.chart {
-    width: 10%;
-    height: 100%;
-}
-
-
 
 .logo {
 	position: absolute;
@@ -64,11 +53,120 @@ body {
 	transform: translateY(-50%);
 }
 
+.diagrams {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 10rem;
+    margin-top: 1rem;
+}
+.chart {
+	position: relative;
+	width: 10%;
+	height: 100%;
+	background-color: hsl(10, 79%, 65%);
+	border-radius: 0.3rem;
+	cursor: pointer;
+    transition: background-color .2s;
+    
+}
+
+.mon {
+	height: 3rem;
+}
+.tue {
+	height: 6rem;
+}
+.wed {
+	height: 9rem;
+}
+.thu {
+	height: 5rem;
+}
+.fri {
+	height: 4rem;
+}
+.sat {
+	height: 8rem;
+}
+.sun {
+	height: 5rem;
+}
+
+.chart-day {
+	position: absolute;
+	bottom: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: hsl(28, 10%, 53%);
+	
+}
+
+.chart:hover {
+	background-color: hsl(186, 34%, 60%);
+}
 
 
 
 
 
+.summary {
+display: flex;
+justify-content: space-between;
+height: 4rem;
+
+}
+
+.summary-left_side, .summary-right_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(28, 10%, 53%);
+}
+
+.summary-right_side {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.summary-percentage {
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+
+.summary-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.chart-price {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.9rem;
+    height: 2.2rem;
+    top: -2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 0.3rem;
+    color: hsl(33, 100%, 98%); 
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}
 
 footer {
 	position: absolute;
